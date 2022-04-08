@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JS</title>
+    <style>
+
+        body {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            margin: 0;
+	        text-align: center;
+	        color: white;
+            
+        }
+        a {
+            font-size:x-large;
+            color:#33211c;
+            text-decoration:none;
+            padding-left: 2px;
+            padding-right: 2px;
+            border-radius: 5px;
+            display: inline-block;
+            padding: 5px 0px;
+            position: relative;
+        }
+        ol {
+           
+            list-style-type: none;
+            margin-top: 120px;
+            margin-left: 180px;
+            gap: 40px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        a:after {
+            content: "";
+            display: block;
+            height: 2px;
+            width: 0px;
+            background: black;
+            margin-top: 4px;
+            transition: 0.3s;
+            position: absolute;
+
+        }
+        a:hover:after {
+            width: 100%;
+        }
+    
+        .bg-animated { 
+            width: 100wh;
+	        height: 100vh;
+            background: #f0f4f5;
+            background: linear-gradient(45deg, #5d6062, #eaf4f0, #ffec84, #82764b,  #f0f4f5);
+            background-size: 400%;
+            -webkit-animation: animaFundo 20s ease infinite;
+            -moz-animation: animaFundo 20s ease infinite;
+            animation: animaFundo 20s ease infinite;
+          }
+
+          @keyframes animaFundo {
+
+                0% {
+                    background-position: 0% 50%
+                }
+                50% {
+                    background-position: 100% 50%
+                }
+                100% {
+                    background-position: 0% 50%
+                }
+
+}
+
+        </style>
+</head>
+<body class="bg-animated">
+    <ol>
+        <li><a href="001/index.html">Exercício 1</a></li><br>
+        <li><a href="002/index.html">Exercício 2</a></li><br>
+        <li><a href="003/index.html">Exercício 3</a></li><br>
+        <li><a href="004/index.html">Exercício 4</a></li><br>
+        <li><a href="005/index.html">Exercício 5</a></li><br>
+        <li><a href="006/index.html">Exercício 6</a></li><br>
+        <li><a href="007/index.html">Exercício 7</a></li><br>
+        <li><a href="008/index.html">Exercício 8</a></li>
+    </ol>
+</body>
+</html>
